@@ -8,41 +8,7 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Welcome to my app!23232323" />
-        <p className="description">
-          Get started by editing 111111111<code>pages/index.js</code>
-         ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
-    ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
-        </p>
-    
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>복리 계산기</title>
-</head>
-<body>
-    <h1>복리 계산기</h1>
-    <p>초기 투자 금액: <input type="number" id="initialInvestment" min="0" step="any"></p>
-    <p>복리 기간 (년): <input type="number" id="compoundPeriod" min="1" step="1"></p>
-    <p>수익률 (%): <input type="number" id="interestRate" min="0" step="any"></p>
-    <button onclick="calculateCompoundInterest()">계산하기</button>
-    <table border="1" id="resultTable" style="display: none;">
-        <thead>
-            <tr>
-                <th>년도</th>
-                <th>총 투자 금액</th>
-            </tr>
-        </thead>
-        <tbody id="resultTableBody">
-        </tbody>
-    </table>
-
-    <script>
+         <script>
         function calculateCompoundInterest() {
             const initialInvestment = parseFloat(document.getElementById("initialInvestment").value);
             const compoundPeriod = parseInt(document.getElementById("compoundPeriod").value);
@@ -70,8 +36,24 @@ export default function Home() {
             document.getElementById("resultTable").style.display = "table";
         }
     </script>
-</body>
-</html>
+
+ </Head>
+
+      <main>
+        <Header title="복리 계산기" />
+        <p className="description">
+          <code>복리 계산기</code></p>
+   <p>초기 투자 금액: <input type="number" id="initialInvestment" min="0" step="any"></p>
+    <p>복리 기간 (년): <input type="number" id="compoundPeriod" min="1" step="1"></p>
+    <p>수익률 (%): <input type="number" id="interestRate" min="0" step="any"></p>
+    <button onclick="calculateCompoundInterest()">계산하기</button>
+    <h2>계산 결과</h2>
+    <p id="result" style="display: none;"></p>
+
+  
+         
+
+       
 
       </main>
 
