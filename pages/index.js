@@ -40,21 +40,7 @@ export default function Home() {
  </Head>
 
       <main>
-        <Header title="복리 계산기" />
-        <p className="description">
-          <code>복리 계산기</code></p>
-   <p>초기 투자 금액: <input type="number" id="initialInvestment" min="0" step="any"></p>
-    <p>복리 기간 (년): <input type="number" id="compoundPeriod" min="1" step="1"></p>
-    <p>수익률 (%): <input type="number" id="interestRate" min="0" step="any"></p>
-    <button onclick="calculateCompoundInterest()">계산하기</button>
-    <h2>계산 결과</h2>
-    <p id="result" style="display: none;"></p>
-
-  
-         
-
-       
-
+      <p>하이하이<p>
       </main>
 
       <Footer />
